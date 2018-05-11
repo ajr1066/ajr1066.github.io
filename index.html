@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<title>WFG Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+    body {
+        font-family: "Righteous", sans-serif;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+
+    h4{
+        font-family: Righteous;
+    }
+
+    h2{
+        font-family: Righteous;
+    }
+
+    .yes{
+        font-family: Righteous;
+    }
+
+    .content{
+        max-width: 500px;
+        font-family: Righteous;
+    }
+</style>
+
+<body class="w3-blue w3-text-black"
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myHideShow()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <a href="index.html" class="w3-padding-large w3-button" title="Members">MEMBERS<i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="index.html" class="w3-bar-item w3-button">Antony</a>
+                    <a href="index.html" class="w3-bar-item w3-button">Nathan</a>
+                    <a href="index.html" class="w3-bar-item w3-button">Kelsey</a>
+                    <a href="index.html" class="w3-bar-item w3-button">Noah</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <a href="catches.html" class="w3-padding-large w3-button" title="Catches">CATCHES<i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="catches.html" class="w3-bar-item w3-button">May 2017</a>
+                    <a href="catches.html" class="w3-bar-item w3-button">June 2017</a>
+                    <a href="catches.html" class="w3-bar-item w3-button">July 2017</a>
+                    <a href="catches.html" class="w3-bar-item w3-button">August 2017</a>
+                    <a href="catches.html" class="w3-bar-item w3-button">January 2018</a>
+                    <a href="catches.html" class="w3-bar-item w3-button">February 2018</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <a href="species.html" class="w3-padding-large w3-button" title="More">SPECIES<i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="species.html" class="w3-bar-item w3-button">Bass</a>
+                    <a href="species.html" class="w3-bar-item w3-button">Trout</a>
+                    <a href="species.html" class="w3-bar-item w3-button">Panfish</a>
+                    <a href="species.html" class="w3-bar-item w3-button">Pike/Muskie</a>
+                    <a href="species.html" class="w3-bar-item w3-button">Catfish</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <a href="locations.html" class="w3-padding-large w3-button" title="Locations">LOCATIONS<i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="locations.html" class="w3-bar-item w3-button">Manchester</a>
+                    <a href="locations.html" class="w3-bar-item w3-button">Hooksett</a>
+                    <a href="locations.html" class="w3-bar-item w3-button">Bristol</a>
+                    <a href="locations.html" class="w3-bar-item w3-button">Laconia</a>
+                    <a href="locations.html" class="w3-bar-item w3-button">Nottingham</a>
+                    <a href="locations.html" class="w3-bar-item w3-button">Hampton</a>
+                    <a href="locations.html" class="w3-bar-item w3-button">Rye</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <a href="tackle.html" class="w3-padding-large w3-button" title="Tackle">TACKLE<i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="https://www.basspro.com" class="w3-bar-item w3-button">Bass Pro Shops</a>
+                    <a href="http://www.tacklewarehouse.com" class="w3-bar-item w3-button">Tackle Warehouse</a>
+                    <a href="https://www.abugarcia.com" class="w3-bar-item w3-button">Abu Garcia</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <a href="social.html" class="w3-padding-large w3-button" title="Socia Media">SOCIAL MEDIA<i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="https://www.instagram.com/wicked_fishing_nh/" class="w3-bar-item w3-button">Instagram</a>
+                    <a href="https://www.facebook.com" class="w3-bar-item w3-button">Facebook</a>
+                    <a href="https://www.twitter.com" class="w3-bar-item w3-button">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="members.html" class="w3-bar-item w3-button w3-padding-large">MEMBERS</a>
+        <a href="catches.html" class="w3-bar-item w3-button w3-padding-large">CATCHES</a>
+        <a href="species.html" class="w3-bar-item w3-button w3-padding-large">SPECIES</a>
+        <a href="locations.html" class="w3-bar-item w3-button w3-padding-large">LOCATIONS</a>
+        <a href="tackle.html" class="w3-bar-item w3-button w3-padding-large">TACKLE</a>
+        <a href="social.html" class="w3-bar-item w3-button w3-padding-large">SOCIAL MEDIA</a>
+    </div>
+
+<div class="w3-content" style="max-width:2000px; margin-top:46px">
+        <!-- Automatic Slideshow Images -->
+        <!-- Image 1 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="imgs/newfound.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h2>Newfound Lake</h2>
+                <p><b>Antony's favorite spot to catch hefty smalljaws!</b></p>
+            </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="imgs/waukewan.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h2>Lake Waukewan</h2>
+                <p><b>This beautiful lake is FULL of great fish!</b></p>
+            </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="imgs/winnipesaukee.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h2>Lake Winnipesaukee</h2>
+                <p><b>A popular spot for ice fishing in the winter!</b></p>
+            </div>
+        </div>
+        <!-- Image 4 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="imgs/massabesic.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h2>Lake Massabesic</h2>
+                <p><b>An awesome spot for rainbow and brown trout!</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page content -->
+    <!-- The Member Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" id="group">
+        <h2 class="">THE WICKED FISHING GROUP</h2>
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <h4>Antony</h4>
+                <img src="imgs/ant.jpg" class="w3-round" alt="Antony" style="width:100%">
+            </div>
+            <div class="w3-quarter">
+                <h4>Nathan</h4>
+                <img src="imgs/nate.jpg" class="w3-round" alt="Nathan" style="width:100%">
+            </div>
+            <div class="w3-quarter">
+                <h4>Kelsey</h4>
+                <img src="imgs/kelso.jpg" class="w3-round" alt="Kelsey" style="width:100%">
+            </div>
+            <div class="w3-quarter">
+                <h4>Noah</h4>
+                <img src="imgs/noah.jpg" class="w3-round" alt="Noah" style="width:100%">
+            </div>
+        </div>
+        <p class="w3-justify">
+          "In our family, there was no clear line between religion and fly fishing. We lived at the junction of great trout rivers in western Montana, and our father was a Presbyterian minister and a fly fisherman who tied his own flies and taught others. He told us about Christ's disciples being fishermen, and we were left to assume, as my brother and I did, that all first-class fishermen on the Sea of Galilee were fly fishermen and that John, the favorite, was a dry-fly fisherman." This is an excerpt from A River Runs Through It by Norman Maclean. </p>
+    </div>
+
+        <!-- The Contact Section -->
+        <div class="w3-container w3-content w3-center w3-padding-64" id="contact">
+            <h2 class="w3-center">CONTACT WFG</h2>
+            <p class="w3-opacity w3-center"><i>Want to join? Send us an email or call us!</i></p>
+            <div class="w3-large w3-center">
+                <i class="fa fa-phone"></i> <br> Phone: +1-(603)-860-3826<br>
+                <i class="fa fa-envelope"></i> <br> Email: ajr1066@wildcats.unh.edu<br>
+            </div>
+        </div>
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center w3-dark-grey w3-xlarge w3-padding-64">
+        <a href="#" class="w3-hover-text-blue"><i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="w3-hover-text-blue"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="w3-hover-text-blue"><i class="fa fa-instagram"></i></a>
+        <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 1000);
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myHideShow() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+</body>
+
+</html>
